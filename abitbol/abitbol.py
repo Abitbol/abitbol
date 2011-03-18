@@ -10,7 +10,7 @@ __author__ = "Jérémy Subtil"
 __email__ = "jeremy.subtil@smile.fr"
 
 
-def main():
+def test():
 
 	client = Client('localhost')
 
@@ -34,3 +34,7 @@ def main():
 
 #	client.sendPresence(typ='unavailable')
 #	client.disconnect()
+
+
+def main():
+	test
