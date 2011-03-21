@@ -1,5 +1,5 @@
 #!/usr/bin/env python
 
-from abitbol.abitbol import main
+from core.abitbol import main
 
 main()
