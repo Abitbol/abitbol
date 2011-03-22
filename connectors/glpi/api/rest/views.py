@@ -6,7 +6,7 @@ GLPI API views.
 
 from api.rest.utils import *
 from connectors.glpi.api.rest.urls import urls
-from business.jira_glpi import link_tickets
+from connectors.glpi.business.jira import link_to_jira
 import web
 
 __author__ = "Jérémy Subtil"
@@ -35,7 +35,7 @@ class LinkJira:
 		except RuntimeError as e:
 			return render_error(str(e))
 
-		link_tickets(data['glpi_ticket_id'], data['jira_ticket_id'])
+		link_to_jira(data['glpi_ticket_id'], data['jira_ticket_id'])
 
 		return render_success()
 

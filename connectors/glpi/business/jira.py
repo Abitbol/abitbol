@@ -13,9 +13,9 @@ __author__ = "Jérémy Subtil"
 __email__ = "jeremy.subtil@smile.fr"
 
 
-def link_tickets(glpi_id, jira_id):
+def link_to_jira(glpi_id, jira_id):
 	"""
-	Links a GLPI ticket and a JIRA one.
+	Links a GLPI ticket to a JIRA one.
 
 	"""
 	glpi_ticket = GlpiTicket(glpi_id)
