@@ -4,7 +4,7 @@ Global API URLs.
 
 """
 
-from api.rest.glpi.views import app_glpi
+from connectors.glpi.api.rest.views import app_glpi
 
 __author__ = "Jérémy Subtil"
 __email__ = "jeremy.subtil@smile.fr"

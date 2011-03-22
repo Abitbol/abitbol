@@ -3,6 +3,7 @@
 GLPI API URLs.
 
 """
+
 __author__ = "Jérémy Subtil"
 __email__ = "jeremy.subtil@smile.fr"
 

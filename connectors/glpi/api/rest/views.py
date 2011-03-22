@@ -4,8 +4,8 @@ GLPI API views.
 
 """
 
-from api.rest.glpi.urls import urls
 from api.rest.utils import *
+from connectors.glpi.api.rest.urls import urls
 import web
 
 __author__ = "Jérémy Subtil"
