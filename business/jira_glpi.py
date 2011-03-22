@@ -4,10 +4,10 @@ Business logic linking JIRA & GLPI.
 
 """
 
+from common.connectors.glpi.models import Ticket as GlpiTicket
+from common.connectors.jira.models import Ticket as JiraTicket
 from connectors.glpi.actions import jira as glpi_actions
-from connectors.glpi.models import Ticket as GlpiTicket
 from connectors.jira.actions import glpi as jira_actions
-from connectors.jira.models import Ticket as JiraTicket
 
 __author__ = "Jérémy Subtil"
 __email__ = "jeremy.subtil@smile.fr"
