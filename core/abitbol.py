@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Abitbol's main module.
+
 """
 
 from xmpp import Client

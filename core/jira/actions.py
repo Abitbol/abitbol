@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 JIRA actions.
+
 """
 
 __author__= "Jérémy Subtil"
