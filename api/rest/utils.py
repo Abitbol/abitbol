@@ -6,6 +6,8 @@ REST API utils.
 
 import json
 
+import web
+
 __author__ = "Jérémy Subtil"
 __email__ = "jeremy.subtil@smile.fr"
 
@@ -41,6 +43,7 @@ def render_error(msg):
 	Renders an error response.
 
 	"""
+	web.BadRequest()
 	response = {'error': True, 'msg': msg}
 	return response_renderer.render(response)
 
