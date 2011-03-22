@@ -4,6 +4,7 @@ Abitbol's main module.
 
 """
 
+from api.rest.views import api_app
 from xmpp import Client
 from xmpp import Message
 
@@ -38,4 +39,4 @@ def test():
 
 
 def main():
-	test
+	api_app.run()
