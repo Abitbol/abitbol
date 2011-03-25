@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 REST API utils.
 
@@ -8,7 +7,7 @@ import json
 
 import web
 
-__author__ = "Jérémy Subtil"
+__author__ = "Jeremy Subtil"
 __email__ = "jeremy.subtil@smile.fr"
 
 

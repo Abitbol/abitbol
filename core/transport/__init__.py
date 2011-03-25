@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Transport layer.
 
@@ -6,7 +5,7 @@ Transport layer.
 
 from core.transport.local import LocalTransport
 
-__author__ = "Jérémy Subtil"
+__author__ = "Jeremy Subtil"
 __email__ = "jeremy.subtil@smile.fr"
 
 

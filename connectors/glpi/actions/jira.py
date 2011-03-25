@@ -1,10 +1,9 @@
-# -*- coding: utf-8 -*-
 """
 GLPI's `JIRA plugin` actions.
 
 """
 
-__author__ = "Jérémy Subtil"
+__author__ = "Jeremy Subtil"
 __email__ = "jeremy.subtil@smile.fr"
 
 

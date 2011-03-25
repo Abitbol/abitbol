@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 GLPI API views.
 
@@ -9,7 +8,7 @@ from connectors.glpi.api.rest.urls import urls
 from connectors.glpi.business.jira import link_to_jira
 import web
 
-__author__ = "Jérémy Subtil"
+__author__ = "Jeremy Subtil"
 __email__ = "jeremy.subtil@smile.fr"
 
 

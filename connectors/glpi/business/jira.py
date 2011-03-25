@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Business logic linking JIRA & GLPI.
 
@@ -9,7 +8,7 @@ from common.connectors.jira.models import Ticket as JiraTicket
 from connectors.glpi.actions.jira import link_jira
 from core.transport import transport
 
-__author__ = "Jérémy Subtil"
+__author__ = "Jeremy Subtil"
 __email__ = "jeremy.subtil@smile.fr"
 
 
