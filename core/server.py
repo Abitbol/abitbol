@@ -1,13 +1,14 @@
+# -*- coding: utf-8 -*-
 """
 Abitbol's main module.
 
 """
-
-from api.rest.views import api_app
+from api.rest.server import RestServer
+from core.transport.utils import TransportFactory
 from xmpp import Client
 from xmpp import Message
 
-__author__ = "Jeremy Subtil"
+__author__ = "Jérémy Subtil"
 __email__ = "jeremy.subtil@smile.fr"
 
 
@@ -27,7 +28,7 @@ def test():
 	client.RegisterHandler('message', message_handler)
 
 	client.sendInitPresence()
-	
+
 	client.send(Message('tim@localhost', 'Test message'))
 
 	while 1:
@@ -37,5 +38,33 @@ def test():
 #	client.disconnect()
 
 
-def main():
-	api_app.run()
+class AbitbolServer(object):
+	"""
+	The Abitbol server.
+
+	"""
+	settings = None
+
+	def configure(self, settings):
+		"""
+		Configures the server before it can be run.
+
+		"""
+		self.settings = settings
+
+	def run(self):
+		"""
+		Starts the server instance.
+
+		"""
+		if not self.settings:
+			raise RuntimeError("The server is not configured.")
+
+		self.transport = TransportFactory(self.settings.get('transport_type'))
+		self.restServer = RestServer()
+
+		self.transport.connect()
+		self.restServer.run()
+
+
+server = AbitbolServer()
