@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Abitbol's main module.
 
@@ -8,7 +7,7 @@ from core.transport.utils import TransportFactory
 from xmpp import Client
 from xmpp import Message
 
-__author__ = "Jérémy Subtil"
+__author__ = "Jeremy Subtil"
 __email__ = "jeremy.subtil@smile.fr"
 
 
