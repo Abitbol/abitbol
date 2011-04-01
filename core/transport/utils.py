@@ -2,7 +2,8 @@
 Transport layer utils.
 
 """
-from core.transport.local import LocalTransport
+
+from core.transport.common import Transport
 
 __author__ = "Jeremy Subtil"
 __email__ = "jeremy.subtil@smile.fr"
@@ -13,7 +14,7 @@ def TransportFactory(type):
 	Returns a Transport instance.
 
 	"""
-	transport_class = {
-		'local': LocalTransport}
-	
-	return transport_class[type]()
+	for cls in Transport.__subclasses__():
+		if cls.isIdentifiedBy(type):
+			return cls()
+	raise ValueError

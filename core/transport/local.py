@@ -19,6 +19,10 @@ class LocalTransport(Transport):
 	def send(self, destination, action):
 		receptor.handle(destination, action)
 
+	@classmethod
+	def isIdentifiedBy(cls, type):
+		return type == 'local'
+
 
 class ReceptionHandler(object):
 	"""
