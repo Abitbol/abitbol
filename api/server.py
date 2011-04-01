@@ -14,6 +14,6 @@ class RestServer(object):
 
 	"""
 	def run(self):
-		from api.rest.urls import urls
+		from api.urls import urls
 		self.app = web.application(urls, {})
 		self.app.run()

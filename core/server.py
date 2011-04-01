@@ -3,7 +3,7 @@
 Abitbol's main module.
 
 """
-from api.rest.server import RestServer
+from api.server import RestServer
 from core.transport.utils import TransportFactory
 from xmpp import Client
 from xmpp import Message

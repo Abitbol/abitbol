@@ -3,8 +3,8 @@ GLPI API views.
 
 """
 
-from api.rest.utils import *
-from connectors.glpi.api.rest.urls import urls
+from api.utils import *
+from connectors.glpi.api.urls import urls
 from connectors.glpi.business.jira import link_to_jira
 import web
 
