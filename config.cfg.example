@@ -1,0 +1,11 @@
+[General]
+transport=local
+;transport=xmpp
+
+[XMPP]
+domain=localhost
+host=127.0.0.1
+port=5222
+user=abitbol
+password=abitbol
+presence=abitbol
